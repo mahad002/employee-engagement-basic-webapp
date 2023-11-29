@@ -1,0 +1,90 @@
+.employee-card {
+    padding: 20px;
+    margin: 10px;
+    animation: fadeIn 1s ease-in-out;
+    border: 1px solid #2c2c2c;
+    border-radius: 5px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.employee-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.employee-username,
+.employee-email,
+.employee-phone,
+.employee-company {
+    margin-top: 10px;
+}
+
+.profile-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.profile-link:hover {
+    background-color: #0056b3;
+}
+
+/* BEGIN: Media Queries */
+@media screen and (max-width: 768px) {
+    .employee-card {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .employee-name {
+        font-size: 18px;
+    }
+
+    .employee-username,
+    .employee-email,
+    .employee-phone,
+    .employee-company {
+        margin-top: 5px;
+    }
+
+    .profile-link {
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .employee-card {
+        padding: 5px;
+        margin: 2px;
+    }
+
+    .employee-name {
+        font-size: 16px;
+    }
+
+    .employee-username,
+    .employee-email,
+    .employee-phone,
+    .employee-company {
+        margin-top: 2px;
+    }
+
+    .profile-link {
+        padding: 2px 5px;
+    }
+}
+/* END: Media Queries */

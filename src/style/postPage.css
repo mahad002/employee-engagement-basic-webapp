@@ -1,0 +1,116 @@
+.post-page {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+}
+
+.post-page .navbar {
+    /* Styles for the navbar */
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.post-page .post-title {
+    /* Styles for the post title */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post-page .post-body {
+    /* Styles for the post body */
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.post-page .comments-title {
+    /* Styles for the comments title */
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.post-page .comment {
+    /* Styles for each comment */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.post-page .comment .comment-name {
+    /* Styles for the comment name */
+    font-weight: bold;
+}
+
+.post-page .comment .comment-body {
+    /* Styles for the comment body */
+    margin-top: 5px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.post-page .comment {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .post-page {
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid #ccc;
+    }
+
+    .post-page .navbar {
+        /* Styles for the navbar in mobile view */
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+    }
+
+    .post-page .post-title {
+        /* Styles for the post title in mobile view */
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .post-page .post-body {
+        /* Styles for the post body in mobile view */
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    .post-page .comments-title {
+        /* Styles for the comments title in mobile view */
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .post-page .comment {
+        /* Styles for each comment in mobile view */
+        margin-bottom: 5px;
+        padding: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .post-page .comment .comment-name {
+        /* Styles for the comment name in mobile view */
+        font-weight: bold;
+    }
+
+    .post-page .comment .comment-body {
+        /* Styles for the comment body in mobile view */
+        margin-top: 3px;
+    }
+}

@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import PostPage from './postPage';
 import PostCard from '../components/postCard';
+import '../style/profilePage.css';
 
 const ProfilePage = () => {
     const [user, setUser] = useState('');
@@ -51,11 +52,11 @@ const ProfilePage = () => {
                 <p className="profile-website">Website: {user.website}</p>
                 <p className="profile-company">Company: {user.company.name}</p>
             </div>
-            <div>
-            {userPosts.map(post => (
-                <PostCard key={post.id} post={post} />
-            ))}
-        </div>
+            <div className="post-card-container">
+                {userPosts.map(post => (
+                    <PostCard key={post.id} post={post} />
+                ))}
+            </div>
         </div>
     );
 };

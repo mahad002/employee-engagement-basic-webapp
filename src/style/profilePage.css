@@ -1,0 +1,63 @@
+.profile-page {
+    padding: 20px;
+    margin: 20px;
+    animation: fadeIn 1s ease-in-out;
+    border: 1px solid black;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-username,
+.profile-email,
+.profile-address,
+.profile-phone,
+.profile-website,
+.profile-company {
+    margin-bottom: 10px;
+    /* border: 1px solid black; */
+}
+
+@media screen and (max-width: 768px) {
+    .profile-page {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .profile-name {
+        font-size: 18px;
+    }
+}
+
+.post-card-container {
+    animation: slideIn 1s ease-in-out;
+    padding: 20px;
+    margin: 20px;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .post-card-container {
+        padding: 5px;
+        margin: 5px;
+    }
+}

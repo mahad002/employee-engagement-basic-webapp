@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import EmployeeCard from '../components/employeeCard';
+import '../style/employeeListPage.css';
 
 const EmployeeListPage = () => {
     const [users, setUsers] = useState([]);
